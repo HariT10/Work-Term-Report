@@ -773,6 +773,15 @@
     padding: 5vh 5vw;  /* responsive spacing around content */
     box-sizing: border-box; /* includes padding in height calculations */
   }
+
+  #section1 h1{
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+  
+    font-size: 38px;
+    margin-top: -90px;
+    align-items: center;
+    overflow-x: hidden;
+  }
   
   .me1 {
     display: flex;
