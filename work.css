@@ -944,16 +944,15 @@
 }
 
 
-  .newText1{
-    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
-    text-align: center;
- 
-    font-size: 18px;
-    padding: 150px;
+.newText1 {
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
 
-    margin-top: -400px;
+  margin-top: 36px;   /* Adds space above the new text section */
+  font-size: 18px;
+  text-align: left;   /* Improved readability for paragraph text */
+  max-width: 900px;   /* Optional: keeps text easier to read on wide screens */
+}
 
-  }
 
   
   .jobtext2 p{
