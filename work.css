@@ -896,26 +896,27 @@
   
   #section12 {
     display: flex;
-    justify-content: center;   /* horizontal centering */
-    align-items: flex-start;   /* vertical start = top */
-    min-height: 165vh;         /* keeps section tall if needed */
-    height: auto;              /* lets content expand naturally */
-    padding: 10vh 5vw;         /* top padding moves content slightly down from top */
+    flex-direction: column;
+    align-items: center;         /* Center content horizontally */
+    justify-content: flex-start; /* Align content at the top */
+    min-height: 100vh;
+    padding: 8vh 5vw;
     box-sizing: border-box;
     text-align: center;
-  }
-  
-  #section12 h1 {
+}
+
+/* Space below the section header */
+#section12 h1 {
     font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
     font-size: 40px;
-    margin: 0;                 /* remove negative margin */
-  }
+    margin-bottom: 32px;
+}
   
   
   
  .jobtext p{
 
-    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
     text-align: center;
     margin-top: -1250px;
     font-size: 18px;
@@ -923,16 +924,24 @@
   
   }
 
-  .jobT p{
-
-    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
-    text-align: center;
-    margin-top: -1250px;
+  .jobT p {
     font-size: 18px;
-    padding: 150px;
+    margin-bottom: 32px;
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
+}
 
+.job ul {
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
+  list-style: disc inside;
+  font-size: 18px;
+  padding-left: 0;         /* Remove default padding */
+  margin: 0; 
+}
 
-  }
+.job li {
+  margin-bottom: 14px;
+  text-align: left;        /* Improve readability for list items */
+}
 
 
   .newText1{
@@ -942,34 +951,10 @@
     font-size: 18px;
     padding: 150px;
 
-    margin-top: -90px;
+    margin-top: -400px;
 
   }
 
-  .jobtext ul{
-
-
-    list-style-type: disc;  /* bullets */
-    list-style-position: inside; /* keep bullets close to text */
-    
-
-    margin-top: -120px;
-
-  }
-
-  .jobtext ul li{
-
-    margin-top: 20px;
-    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
-    text-align: center;
-  
-    font-size: 18px;
-  
-
-
-
-  }
-  
   
   .jobtext2 p{
 
