@@ -955,59 +955,62 @@
 
 
   
-  .jobtext2 p{
 
-    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
-    text-align: center;
-    margin-top: -290px;
-    font-size: 18px;
-    padding: 150px;
-  
-  }
-
-  .jobtext3 p{
-
-    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
-    text-align: center;
-    margin-top: -500px;
-    font-size: 18px;
-    padding: 150px;
-  
-  }
   
   
-  #section3{
-  
+  #section3 {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 55vh;
-  
-  
-  }
-  
-  #section3 h1{
-    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+    flex-direction: column;    /* Stack vertically */
+    justify-content: flex-start; /* Start at top, not center */
+    align-items: center;         /* Center horizontally */
+    min-height: 40vh;            /* Use min-height instead of fixed height */
+    padding: 8vh 5vw;            /* Add padding for space */
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#section3 h1 {
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
     font-size: 40px;
-    margin-top: 100px;
-  }
+    margin: 0 0 32px 0;         /* Margin below heading for space */
+}
+
+.jobtext2 p {
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+
+  font-size: 18px;
+  margin: 0 auto 0 auto;      /* Center paragraph, space above and below if needed */
+  max-width: 900px;           /* Optional: improve readability on wide screens */
+}
+
+
   
-  
-  #section5{
-  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 55vh;
-  
-  
-  }
-  
-  #section5 h1{
-    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
-    font-size: 40px;
-    margin-top: -600px;
-  }
+#section5 {
+  display: flex;
+  flex-direction: column;         /* Stack content vertically */
+  align-items: center;            /* Center horizontally */
+  justify-content: flex-start;    /* Start at top of section */
+  min-height: 40vh;               /* Grow as needed */
+  padding: 8vh 5vw;               /* Add some breathing room */
+  box-sizing: border-box;
+  text-align: center;
+}
+
+#section5 h1 {
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
+  font-size: 40px;
+  margin: 0 0 32px 0;             /* Only space below heading */
+}
+
+
+.jobtext3 p {
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
+  text-align: center;
+  font-size: 18px;
+  margin: 0 0 0 0;                /* Remove unnecessary margin */
+  padding: 0 30px;                /* Smaller horizontal padding for some side space */
+  max-width: 900px;               /* Optional: better readability */
+}
   
 
   
