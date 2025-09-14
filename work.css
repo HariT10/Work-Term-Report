@@ -3,7 +3,7 @@
 
 
     body{
-      background-color:  #FFF8DC;
+      background-color:  #E0FFFF;
       /*background-image: url(4907157.jpg);*/
       background-size: 100% auto;
       background-attachment: fixed;
@@ -98,223 +98,52 @@
   
   
   /* HEADER */
+  header {
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
+  }
   
-  /* Parent wrapper centered and styled */
-  .mobile-menu-wrapper {
-    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
-  
-    position: fixed;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
+  .header {
     background: #52AD9C;
-    padding: 10px 50px;
-    border-radius: 12px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    z-index: 1000;
-  }
-  
-  /* Horizontal bar */
-  .menu-header {
-    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
-  
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    color: #5F9EA0;
-  
-    min-width: 250px;
-  
-  }
-  
-  /* Text */
-  .username {
-  
-    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
-  
-  
-    color: black;
-  
-  }
-  
-  /* Menu icon */
-  .menu-icon {
-    font-size: 30px;
-    cursor: pointer;
-    color: black;
-  }
-  
-  /* Hidden by default, shown when toggled */
-  .nav-menu {
-    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
-  
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 60px; /* below the top bar */
-    right: 20px;
-    background-color: white;
-    padding: 10px 0;
-    border-radius: 8px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-    z-index: 999;
-    width: 290px;
-    text-align: left;
-  
-  }
-  
-  /* Base link style (probably already in your CSS) */
-  .nav-menu a {
-    padding: 12px 20px;
-    color: #000000;
-    text-decoration: none;
-    display: block;
-    font-weight: 400;
-  }
-  
-  /* Sub-item style for indented look */
-  .nav-menu a.sub-item {
-    padding-left: 50px; 
-    font-size: 0.95em;   /* Optional: slightly smaller */
-    color: #000000;         /* Optional: lighter text */
-  }
-  
-  
-  .nav-menu a:hover {
-    background-color: #f0f0f0;
-    color: #4f8ef7;
-  }
-  
-  .nav-menu.show {
-    display: flex;
-  }
-  
-  
-  /*the icon*/
-  .navIcon{
-  
-    display: inline-flex;
-    align-items: center;
-    gap: 6000px; /* space between icon and text */
-    text-decoration: none;
-    color: inherit; /* keeps same text color */
-    font-size: 16px;
-  
-  
-  }
-  
-  
-  
-  .content{
-    padding: 16px;
-  }
-  
-  .sticky {
+    color: white;
     position: fixed;
     top: 0;
-    width: 100%
+    width: 100%;
+    z-index: 1000;
+
+    height: 60px;
+
+    display: flex;               /* enable flexbox */
+    justify-content: center;     /* center horizontally */
+    align-items: center;         /* center vertically */
+    padding: 20px 0;    
   }
   
-  .sticky + .content {
-    padding-top: 102px;
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
   }
+  
+  
   
   .nav-menu {
-    display: none;
-    position: absolute;
-    top: 60px;
-    right: 20px;
-    background-color: white;
-    flex-direction: column;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-  }
-  
-  .nav-menu.show {
+    list-style: none;
     display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+    margin-top: 5px;
   }
   
-  .menu-button {
-    display: flex;
-  }
-  
-  /* ROW HEADER */
-  nav ul{
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    text-align: left;
+  .nav-menu li a {
+    color: white;
     text-decoration: none;
-    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
-    list-style-type: none;
-    margin-top: -12px;
-  
-  
-  
+    font-size: 16px;
   }
   
-  nav ul li{
-    margin: 10px 0;
-    text-decoration: none;
-  
-    margin-left: 20px;
-  }
-  
-  nav ul li a{
-  
-    text-decoration: none;
-    color: #ffffff;
-    
-  }
-  
-  
-  nav ul li a::after{
-    content: ' ';
-    width: 0;
-    height: 3px;
-    background: #ffffff;
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    transition: 0.3s;
-  }
-  
-  nav ul li a:hover::after{
-    width: 100%;
-  }
-  
-  .menu-button {
-    width: 30px;
-    height: 22px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    cursor: pointer;
-    position: absolute;
-    top: 20px;  /* Keep it at the top */
-    left: 20px;  /* Move it to the left side */
-    z-index: 1000;  /* Ensure it's on top of other elements */
-    background-color: transparent; /* Transparent background */
-  
-  }
-  
-  .menuButton {
-    background-color: #000000; /* Black lines for the button */
-    border-radius: 2px;
-    height: 4px;
-    width: 100%;
-  }
-  
-   
-  .header h1{
-    display: none;
-    color: black;
-    font-size: 15px;
-    text-align: left;
+  .nav-menu li a:hover {
+    text-decoration: underline;
   }
   
   
@@ -386,17 +215,7 @@
   
   
   
-  .phoneText{
-  
-    text-align: center;
-    margin-top: 30px;
-    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
-    font-size: 19px;
-    margin-left: 50px;
-    margin-right: 50px;
-    text-decoration: none;
-    font-weight: normal;
-  }
+ 
   
   .me1 p{
   
@@ -465,37 +284,7 @@
     
   }
   
-  
-  .contactMe{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 40px;
-    gap: 20px;
-  
-    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
-  
-  
-  }
-  
-  
-  .linkedin-button {
-  
-    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
-  
-    display: inline-block;
-    background-color: #52AD9C; 
-    color: black;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 8px;
-    transition: background-color 0.3s ease;
-    
-  }
-  
-  .linkedin-button:hover {
-    background-color: gray;
-  }
+
   
   
   
@@ -612,347 +401,18 @@
   
   
   
-  .thumbnail-rows{
+
   
-    display: block;
+ 
   
-    margin-top: -370px;
   
   
-  }
   
   
-  .project-card {
-   
-    border-radius: 20px; /* softer curve */
-    border: 2px solid #000000; /* light gray border */
-    padding: 10px;
-    width: 270px;
-    height: 570px;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
   
-    margin: 0 auto; /* Center the card */
   
   
-    margin-bottom: 80px; 
   
-  
-    
-  }
-  
-  .projectImage{
-  
-  
-    width: 190%;
-    height: 230px; /* or 220px or 250px if you want even bigger */
-    object-fit: cover; /* keeps the image nicely inside its box without stretching */
-    border-radius: 12px; /* optional, makes corners round */
-  
-  
-  
-    
-  
-  }
-  
-  
-  .project-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
-  }
-  
-  
-  .thumbnail-container1{
-  
-    width: 80%;
-   
-    
-    margin: 0 auto;
-  
-  
-    
-  }
-  
-  .thumbnail-container1 img{
-    border: 5px solid #52AD9C; /* Change 'black' to your desired color */
-    border-radius: 15px; 
-  
-    margin: 0 auto;
-  
-    width: 100%
-  
-    
-  }
-  
-  .thumbnail-container1 p{
-    
-  }
-  
-  .description1{
-    display: none;
-  
-  }
-  
-  
-  /* Description text */
-  .description10 {
-    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
-   
-    color: #555;
-    text-align: center;
-  
-    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
-    margin-top: 20px;
-    color: #555;
-    text-align: center;
-    font-weight:bolder;
-  
-  
-  }
-  
-  .thumbnail-container1 p{
-  
-    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
-    text-align: center;
-    margin-top: 10px;
-  
-  }
-  
-  
-  .thumbnail-container2{
-  
-  
-    width: 80%;
-   
-    
-    margin: 0 auto;
-  
-  
-  
-    
-  
-  }
-  
-  .thumbnail-container2 img{
-    border: 5px solid #52AD9C; /* Change 'black' to your desired color */
-    border-radius: 15px; 
-  
-    margin: 0 auto;
-  
-    width: 100%
-    
-  }
-  
-  .thumbnail-container2 p{
-    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
-    text-align: center;
-    margin-top: 10px;
-  
-  }
-  
-  
-  .description2 {
-    display: none;
-    
-  }
-  
-  
-  
-  .description20{
-  
-    
-  
-    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
-    margin-top: 10px;
-    color: #555;
-    text-align: center;
-    font-weight:bolder;
-  
-  }
-  
-  .thumbnail-container3{
-  
-  
-    width: 80%;
-   
-    
-    margin: 0 auto;
-  
-    
-  
-  
-  }
-  
-  .thumbnail-container3 img{
-    border: 5px solid #52AD9C; /* Change 'black' to your desired color */
-    border-radius: 15px; 
-  
-    margin: 0 auto;
-  
-    width: 100%
-  
-    
-  }
-  
-  .thumbnail-container3 p {
-    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
-  
-    text-align: center;
-  
-    margin-top: 10px;
-  }
-  
-  
-  
-  
-  
-  .tech-tags{
-    display: flex;
-  
-    justify-content: center;
-    gap: 5px;
-  
-    width: 100%;
-  }
-  
-  
-  .tech-tags span {
-  
-    background-color: #555;
-    color: #ffffff;
-    padding: 4px 12px;
-    margin: 5px 5px 0 4;
-    font-size: 13px;
-    border-radius: 20px;
-    line-height: 1;
-  
-    display: inline-flex;
-  
-    justify-content: center;
-  
-    align-items: center;
-  
-    white-space: nowrap; 
-  
-  }
-  
-  
-  
-  
-  
-  
-  
-  .tech-tags2{
-    display: flex;
-    flex-wrap: row;
-    justify-content: center;
-    gap: 5px;
-  
-    width: 100%;
-  }
-  
-  
-  .tech-tags2 span {
-  
-    background-color: #555;
-    color: #ffffff;
-    padding: 4px 12px;
-    margin: 5px 5px 0 0;
-    font-size: 13px;
-    border-radius: 20px;
-  
-    display: inline-flex;
-  
-    justify-content: center;
-  
-    align-items: center;
-  
-    white-space: nowrap; 
-  }
-  
-  
-  
-  .button-cont{
-  
-  
-    /*make the buttons side by side */
-    display: flex;
-  
-  
-    justify-content: center;
-  
-    gap: 15px;
-  
-  
-  
-  }
-  
-  
-  .button{
-  
-    display: inline-block;
-  
-    margin-top: 15px;
-    margin-bottom: 20px;
-    padding: 10px 20px;
-    background-color: #000000;
-    color: #ffffff;
-    border: none;
-    border-radius: 8px;
-    text-decoration: none;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-  
-  }
-  
-  
-  .button:hover{
-    background-color: grey;
-  }
-  
-  
-  
-  
-  .description3 {
-    display: none;
-  
-    
-  }
-  
-  .description30{
-  
-  
-    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
-    margin-top: 10px;
-    color: #555;
-    text-align: center;
-    font-weight:bolder;
-    
-  
-  }
-  
-  
-  
-  #section2 h1{
-    font-size: 25px;
-    margin-top: 60px;
-    margin-left: 100px;
-    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
-  
-    
-  }
-  
-  #section2 p{
-    max-width: 700px;
-    font-family: sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    margin-left: 100px;
-    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
-  
-    
-  
-  }
   
   
   
@@ -969,7 +429,7 @@
   
   #section3 h1{
     font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
-    font-size: 30px;
+    font-size: 35px;
     margin-top: -390px;
     
   }
@@ -977,217 +437,7 @@
   
   
   
-  .projects-row1{
   
-    display: block;
-  
-    margin-top: -370px;
-  
-    
-  
-  }
-  
-  .description100{
-  
-  
-    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
-    margin-top: 10px;
-    color: #555;
-    text-align: center;
-    font-weight:bolder;
-    
-  
-  }
-  
-  .projects-row p{
-  
-    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
-    text-align: center;
-  
-  }
-  
-  
-  
-  
-  .project-card1 {
-   
-    border-radius: 20px; /* softer curve */
-    border: 2px solid #000000; /* light gray border */
-    padding: 10px;
-    width: 270px;
-    height: 520px;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  
-    margin: 0 auto; /* Center the card */
-  
-  
-    margin-bottom: 80px; 
-  
-  
-    
-  }
-  
-  .projectImage1{
-  
-  
-    width: 190%;
-    height: 230px; /* or 220px or 250px if you want even bigger */
-    object-fit: cover; /* keeps the image nicely inside its box without stretching */
-    border-radius: 12px; /* optional, makes corners round */
-  
-  
-  
-    
-  
-  }
-  
-  
-  .project-card1:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
-  }
-  
-  
-  
-  
-  
-  
-  .drone{
-  
-    width: 80%;
-   
-    
-    margin: 0 auto;
-    
-    
-  }
-  
-  .description200{
-  
-  
-    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
-    margin-top: 10px;
-    color: #555;
-    text-align: center;
-    font-weight:bolder;
-    
-  
-  }
-  
-  .drone img{
-    border: 5px solid #52AD9C; /* Change 'black' to your desired color */
-    border-radius: 15px; 
-  
-    margin: 0 auto;
-  
-    width: 100%
-    
-    
-  }
-  
-  .d1{
-    display: none;
-    overflow-x: hidden;
-  }
-  
-  
-  /* Description text */
-  .description10 {
-    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
-    margin-top: -110px;
-    color: #555;
-    text-align: center;
-    overflow-x: hidden;
-  }
-  
-  
-  .ePortfolio{
-  
-  
-    width: 80%;
-   
-    
-    margin: 0 auto;
-  
-  }
-  
-  .description300{
-  
-  
-    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
-    margin-top: 10px;
-    color: #555;
-    text-align: center;
-    font-weight:bolder;
-    
-  
-  }
-  
-  .ePortfolio img{
-    border: 5px solid #52AD9C; /* Change 'black' to your desired color */
-    border-radius: 15px; 
-  
-    margin: 0 auto;
-  
-    width: 100%
-  }
-  
-  
-  .d2 {
-    display: none;
-  }
-  
-  
-  
-  .description20{
-  
-    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
-    margin-top: -110px;
-  
-    color: #555;
-    text-align: center;
-  
-  }
-  
-  
-  .project{
-  
-  
-    width: 80%;
-   
-    
-    margin: 0 auto;
-  
-  
-  }
-  
-  .project img{
-    border: 5px solid #52AD9C; /* Change 'black' to your desired color */
-    border-radius: 15px; 
-  
-    margin: 0 auto;
-  
-    width: 100%
-    
-  }
-  
-  
-  .d3 {
-    display: none;
-  }
-  
-  .description30{
-  
-  
-    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
-    margin-top: -110px;
-  
-    color: #555;
-    text-align: center;
-  
-  
-  }
   
   
   #section5{
@@ -1202,129 +452,20 @@
   
   #section5 h1{
     font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
-    font-size: 21px;
+    font-size: 35px;
     margin-top: -250px;
   }
   
   
-  .icons{
-  
-    display: flex;
-    justify-content: center;
-    margin-top: -250px;
-    
+
+
   
   
-  }
+
+
   
+
   
-  
-  .c{
-  
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    border-radius: 50%; /* Makes the icon circular */
-    transition: transform 0.3s ease, background-color 0.3s ease;
-    cursor: pointer;
-    font-size: 24px;
-  
-  }
-  
-  .c:hover{
-  
-    transform: scale(1.1); /* Slightly enlarge the icon */
-    background-color: grey;
-  
-  
-  }
-  
-  
-  
-  .icons2{
-  
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
-    
-    gap: 20px
-  
-  }
-  
-  .tools{
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    border-radius: 40%; /* Makes the icon circular */
-    transition: transform 0.3s ease, background-color 0.3s ease;
-    cursor: pointer;
-    font-size: 20px;
-  
-  }
-  
-  .tools:hover{
-  
-    transform: scale(2.2); /* Slightly enlarge the icon */
-    background-color: grey;
-  
-  
-  }
-  
-  
-  
-  #section6{
-  
-    display: none;
-  
-    /*display: flex;*/
-    justify-content: center;
-    align-items: center;
-    height: 55vh;
-  
-  
-  }
-  
-  #section6 h1{
-    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
-  
-    font-size: 30px;
-    margin-top: 50px;
-  }
-  
-  
-  
-  
-  
-  
-  
-  .extraSection p{
-  
-    display: none;
-  
-    /*display: flex;*/
-    justify-content: center;
-    align-items: center;
-  
-    
-    height: 100vh; /* Sets the height to fill the viewport */
-    text-align: center; /* Ensures the text is centered within the box */
-  
-    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
-    font-size: 14px;
-    margin-top: -550px;
-  
-    align-items: center;
-  
-    padding: 40px;
-  
-  
-  }
   
   
   
@@ -1344,15 +485,147 @@
     
   }
   
+
+  .mainText{
+
+
+      max-width: 90%;   /* keep text from being too wide */
+      margin: 0 auto;   /* center it */
+      padding: 10px;    /* space inside */
+      font-size: 16px;  /* readable size */
+      line-height: 1.6; /* improve readability */
+    
+
+  }
+
+
+  
+  .job{
+
+    display: block;
+    font-size: 15px; 
+    text-align: justify;
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+    padding: 35px;
+    margin-top: -450px;
+
+
+  }
+
+  .job p{
+
+    margin-bottom: 1px; 
+  
+    text-align: justify !important;
+
+
+  }
+  
+  .newText1 {
+
+    display: block;
+    font-size: 15px; 
+    text-align: justify;
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+    padding: 35px;
+    margin-top: -60px;
+
+
+  }
+
+  .newText1 p{
+
+    margin-bottom: 1px; /* Slightly reduce space between paragraphs */
+  
+    text-align: justify !important;
+  }
   
   
+  .me5 img{
+
+  
+    width: 410px;
+    height: auto;
+    border: 5px solid #bbeeff;
+ 
+  
+    margin-top: 70px;
+
+
+  }
+
+  .me5{
+
+    display: flex;
+    justify-content: center;
+  }
+
+  
+  .jobtext2{
+
+    display: block;
+    font-size: 15px; 
+    text-align: justify;
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+    padding: 35px;
+    margin-top: -450px;
+
+
+  }
+
+  .jobtext2 p{
+
+    margin-bottom: 1px; /* Slightly reduce space between paragraphs */
+  
+    text-align: justify !important;
+
+    
+  }
+
+  .jobtext3{
+
+    display: block;
+    font-size: 15px; 
+    text-align: justify;
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+    padding: 35px;
+    margin-top: -400px;
   
   
+  }
+
+
+  .phoneText{
+
+    display: block;
+    font-size: 15px; 
+    text-align: justify;
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+    padding: 35px;
+    margin-top: -230px;
+  }
+
+
+  .phonePic img{
+
+    width: 410px;
+    height: auto;
+
+ 
   
+    margin-top: 70px;
+
+
+  }
+
+  .phonePic{
+
+    display: flex;
+    justify-content: center;
+  }
   
-  
-  
-  
+
+
   
   
   } /*END OF PHONE-----------------------------------------*/
@@ -1766,7 +1039,7 @@
 
     font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
     text-align: center;
-    margin-top: -1250px;
+    margin-top: -1150px;
     font-size: 18px;
     padding: 150px;
   
@@ -1808,6 +1081,16 @@
   
   
   .jobtext2 p{
+
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+    text-align: center;
+    margin-top: -200px;
+    font-size: 18px;
+    padding: 150px;
+  
+  }
+
+  .jobtext3 p{
 
     font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
     text-align: center;
@@ -2468,10 +1751,12 @@
   
   
   
+  .phoneText{
+  
+    display: none;
   
   
-  
-  
+  }
   
   
   }
