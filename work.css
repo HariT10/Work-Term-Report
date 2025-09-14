@@ -910,6 +910,7 @@
     justify-content: center; /* centers horizontally */
     align-items: center;     /* centers vertically */
     height: 1vh;           /* take full viewport height */
+    padding-bottom: 200px;
   }
   
   .me img {
@@ -919,6 +920,7 @@
     border: 5px solid #52AD9C;
   }
   
+
   .me5 {
     display: flex;
     justify-content: center; /* centers horizontally */
