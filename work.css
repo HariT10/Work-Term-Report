@@ -965,7 +965,7 @@
   
     text-align: justify;
   
-    margin-top: -140px;
+    margin-top: -260px;
   
       
   
@@ -1039,7 +1039,7 @@
 
     font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
     text-align: center;
-    margin-top: -1100px;
+    margin-top: -1250px;
     font-size: 18px;
     padding: 150px;
   
@@ -1052,6 +1052,8 @@
  
     font-size: 18px;
     padding: 150px;
+
+    margin-top: -90px;
 
   }
 
@@ -1084,7 +1086,7 @@
 
     font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
     text-align: center;
-    margin-top: -200px;
+    margin-top: -290px;
     font-size: 18px;
     padding: 150px;
   
@@ -1094,7 +1096,7 @@
 
     font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
     text-align: center;
-    margin-top: -200px;
+    margin-top: -500px;
     font-size: 18px;
     padding: 150px;
   
@@ -1594,7 +1596,7 @@
   #section5 h1{
     font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
     font-size: 40px;
-    margin-top: -100px;
+    margin-top: -600px;
   }
   
   .icons{
