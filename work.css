@@ -790,20 +790,21 @@
   
  
   
-  #section0{
-  
+  #section0 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 85vh;
-  
-  
+    min-height: 75vh;  /* ensures it has some height */
+    height: auto;       /* lets content expand naturally */
+    padding: 5vh 5vw;   /* adds responsive spacing */
+    box-sizing: border-box; /* includes padding in height calculations */
+    text-align: center; 
   }
   
-  #section0 h1{
-    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+  #section0 h1 {
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
     font-size: 40px;
-    margin-top: -20px;
+    margin: 0;          /* remove negative top margin, let flex center it */
   }
   
   
