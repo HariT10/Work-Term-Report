@@ -1,0 +1,2537 @@
+@media screen and (max-width: 920px){
+
+
+
+    body{
+      background-color:  #FFF8DC;
+      /*background-image: url(4907157.jpg);*/
+      background-size: 100% auto;
+      background-attachment: fixed;
+      overflow: auto;
+  
+  
+      width: 100%;
+  
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden; /* Prevents horizontal scrolling */
+      box-sizing: border-box;
+  
+  
+      opacity: 0;
+      transition: opacity 2s ease-in;
+  
+     
+      
+  
+  
+    }
+  
+    body.loaded {
+      opacity: 1;
+    }
+  
+    #particles-js {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+    
+  
+  
+  
+    /* PICUTRE */
+    .image1{
+      width: 300px;
+      height: 200px;
+      overflow-x: hidden;
+    }
+  
+    .startText h4{
+  
+      text-align: center;
+    
+      margin-top: 60px;
+    
+      font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+    
+      margin-left: 90px;
+    
+      margin-right: 90px;
+    
+      font-weight: normal;
+    
+    
+    }
+  
+  
+    
+    .footer-contact2{
+    
+      text-align: center;
+      margin-top: 30px;
+    }
+  
+  #typewriter{
+    font-size: 45px;
+  
+    font-weight: 500;
+  
+  
+  
+  }
+  
+  
+  .footer-contactStart{
+  
+    display: none;
+  
+  
+  }
+  
+  
+    
+  
+  
+  
+  /* HEADER */
+  
+  /* Parent wrapper centered and styled */
+  .mobile-menu-wrapper {
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+  
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #52AD9C;
+    padding: 10px 50px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  /* Horizontal bar */
+  .menu-header {
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color: #5F9EA0;
+  
+    min-width: 250px;
+  
+  }
+  
+  /* Text */
+  .username {
+  
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+  
+  
+    color: black;
+  
+  }
+  
+  /* Menu icon */
+  .menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    color: black;
+  }
+  
+  /* Hidden by default, shown when toggled */
+  .nav-menu {
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+  
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* below the top bar */
+    right: 20px;
+    background-color: white;
+    padding: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    z-index: 999;
+    width: 290px;
+    text-align: left;
+  
+  }
+  
+  /* Base link style (probably already in your CSS) */
+  .nav-menu a {
+    padding: 12px 20px;
+    color: #000000;
+    text-decoration: none;
+    display: block;
+    font-weight: 400;
+  }
+  
+  /* Sub-item style for indented look */
+  .nav-menu a.sub-item {
+    padding-left: 50px; 
+    font-size: 0.95em;   /* Optional: slightly smaller */
+    color: #000000;         /* Optional: lighter text */
+  }
+  
+  
+  .nav-menu a:hover {
+    background-color: #f0f0f0;
+    color: #4f8ef7;
+  }
+  
+  .nav-menu.show {
+    display: flex;
+  }
+  
+  
+  /*the icon*/
+  .navIcon{
+  
+    display: inline-flex;
+    align-items: center;
+    gap: 6000px; /* space between icon and text */
+    text-decoration: none;
+    color: inherit; /* keeps same text color */
+    font-size: 16px;
+  
+  
+  }
+  
+  
+  
+  .content{
+    padding: 16px;
+  }
+  
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
+  
+  .sticky + .content {
+    padding-top: 102px;
+  }
+  
+  .nav-menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: white;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  }
+  
+  .nav-menu.show {
+    display: flex;
+  }
+  
+  .menu-button {
+    display: flex;
+  }
+  
+  /* ROW HEADER */
+  nav ul{
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: left;
+    text-decoration: none;
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+    list-style-type: none;
+    margin-top: -12px;
+  
+  
+  
+  }
+  
+  nav ul li{
+    margin: 10px 0;
+    text-decoration: none;
+  
+    margin-left: 20px;
+  }
+  
+  nav ul li a{
+  
+    text-decoration: none;
+    color: #ffffff;
+    
+  }
+  
+  
+  nav ul li a::after{
+    content: ' ';
+    width: 0;
+    height: 3px;
+    background: #ffffff;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.3s;
+  }
+  
+  nav ul li a:hover::after{
+    width: 100%;
+  }
+  
+  .menu-button {
+    width: 30px;
+    height: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;  /* Keep it at the top */
+    left: 20px;  /* Move it to the left side */
+    z-index: 1000;  /* Ensure it's on top of other elements */
+    background-color: transparent; /* Transparent background */
+  
+  }
+  
+  .menuButton {
+    background-color: #000000; /* Black lines for the button */
+    border-radius: 2px;
+    height: 4px;
+    width: 100%;
+  }
+  
+   
+  .header h1{
+    display: none;
+    color: black;
+    font-size: 15px;
+    text-align: left;
+  }
+  
+  
+  .HeaderBlock2{
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 0vh;
+  
+  }
+  
+  .HeaderBlock2 h1{
+  
+    font-size: 20px;
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+    margin-top: -200px;
+  }
+  
+  
+  
+  
+  
+  #section1{
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    text-align: center;
+    overflow-x: hidden;
+  
+  }
+  
+  #section1 h1{
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+  
+    font-size: 38px;
+    margin-top: -10px;
+    align-items: center;
+    overflow-x: hidden;
+  }
+  
+  .me1{
+  
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+  
+    font-size: 20px;
+  
+    overflow-x: hidden;
+  
+  }
+  
+  .highlight {
+  
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+  
+    
+    font-size: 19px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-in, transform 1s ease-in;
+  }
+  
+  .highlight.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  
+  
+  .phoneText{
+  
+    text-align: center;
+    margin-top: 30px;
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+    font-size: 19px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-decoration: none;
+    font-weight: normal;
+  }
+  
+  .me1 p{
+  
+    display: none;
+  
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+  
+    font-size: 15px;
+  
+    overflow-x: hidden;
+  
+  }
+  
+  .profile-pic2 {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%; 
+    align-items: center;
+  
+    margin-bottom: -190px;
+    border: 3px solid #bbeeff;
+  
+  
+    transition: transform 0.4s ease, box - shawdow 0.4s ease;
+  
+    overflow-x: hidden;
+  
+  
+  }
+  
+  .profile-pic2:hover{
+  
+    transform: translateY(-10px); /* Move the image up by 10px */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+  
+    overflow-x: hidden;
+  
+  }
+  
+  
+  .profile-pic{
+  
+    display: none;
+  
+  }
+  
+  
+  .profile-pic5{
+  
+    display: block;
+  
+    width: 160px;
+    height: 160px;
+    border-radius: 50%; 
+  
+  
+    margin: 0 auto;
+  
+    margin-top: -170px;
+  
+  
+  
+  
+    border: 3px solid #52AD9C;
+  
+    
+  }
+  
+  
+  .contactMe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    gap: 20px;
+  
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+  
+  
+  }
+  
+  
+  .linkedin-button {
+  
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+  
+    display: inline-block;
+    background-color: #52AD9C; 
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    
+  }
+  
+  .linkedin-button:hover {
+    background-color: gray;
+  }
+  
+  
+  
+  
+  
+  #section0{
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+  
+    overflow-x: hidden;
+  
+  }
+  
+  #section0 h1{
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+    font-size: 30px;
+    margin-top: 0px;
+  
+    overflow-x: hidden;
+  }
+  
+  
+  .aboutMe {
+    padding: 20px; /* Reduce padding for smaller screens */
+    margin: 0 8px; /* Prevent text from touching edges */
+  
+  
+    text-align: justify;
+  
+    margin-top: -110px;
+  
+  
+  }
+  
+  .text1{
+    display: block;
+    font-size: 15px; 
+    text-align: justify;
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+    padding: 35px;
+    margin-top: -120px;
+  }
+  
+  .text1 p{
+  
+    margin-bottom: 1px; /* Slightly reduce space between paragraphs */
+  
+    text-align: justify !important;
+  
+  }
+  
+  
+  
+  .text {
+    display: none;
+    font-size: 14px; /* Slightly smaller text on mobile */
+    text-align: justify;
+  
+  }
+  
+  .text p {
+    display: none;
+    margin-bottom: 10px; /* Slightly reduce space between paragraphs */
+  
+    text-align: justify !important;
+  
+  }
+  
+  
+  
+  
+  
+  .me {
+    display: flex; /* Enables Flexbox for alignment */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    margin-top: 100px;
+  
+  }
+  
+  .me img {
+    display: none;
+    width: 190px;
+    height: auto;
+    border: 5px solid #bbeeff;
+    padding: 0; /* Remove excessive padding */
+    margin: 0; /* Reset margin */
+  
+    margin-top: 350px;
+    
+  }
+  
+  
+  #section12{
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55vh;
+  
+  
+  }
+  
+  #section12 h1{
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+  
+    font-size: 30px;
+    margin-top: -390px;
+  
+  }
+  
+  
+  
+  .thumbnail-rows{
+  
+    display: block;
+  
+    margin-top: -370px;
+  
+  
+  }
+  
+  
+  .project-card {
+   
+    border-radius: 20px; /* softer curve */
+    border: 2px solid #000000; /* light gray border */
+    padding: 10px;
+    width: 270px;
+    height: 570px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+    margin: 0 auto; /* Center the card */
+  
+  
+    margin-bottom: 80px; 
+  
+  
+    
+  }
+  
+  .projectImage{
+  
+  
+    width: 190%;
+    height: 230px; /* or 220px or 250px if you want even bigger */
+    object-fit: cover; /* keeps the image nicely inside its box without stretching */
+    border-radius: 12px; /* optional, makes corners round */
+  
+  
+  
+    
+  
+  }
+  
+  
+  .project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  .thumbnail-container1{
+  
+    width: 80%;
+   
+    
+    margin: 0 auto;
+  
+  
+    
+  }
+  
+  .thumbnail-container1 img{
+    border: 5px solid #52AD9C; /* Change 'black' to your desired color */
+    border-radius: 15px; 
+  
+    margin: 0 auto;
+  
+    width: 100%
+  
+    
+  }
+  
+  .thumbnail-container1 p{
+    
+  }
+  
+  .description1{
+    display: none;
+  
+  }
+  
+  
+  /* Description text */
+  .description10 {
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+   
+    color: #555;
+    text-align: center;
+  
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+    margin-top: 20px;
+    color: #555;
+    text-align: center;
+    font-weight:bolder;
+  
+  
+  }
+  
+  .thumbnail-container1 p{
+  
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+    text-align: center;
+    margin-top: 10px;
+  
+  }
+  
+  
+  .thumbnail-container2{
+  
+  
+    width: 80%;
+   
+    
+    margin: 0 auto;
+  
+  
+  
+    
+  
+  }
+  
+  .thumbnail-container2 img{
+    border: 5px solid #52AD9C; /* Change 'black' to your desired color */
+    border-radius: 15px; 
+  
+    margin: 0 auto;
+  
+    width: 100%
+    
+  }
+  
+  .thumbnail-container2 p{
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+    text-align: center;
+    margin-top: 10px;
+  
+  }
+  
+  
+  .description2 {
+    display: none;
+    
+  }
+  
+  
+  
+  .description20{
+  
+    
+  
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+    margin-top: 10px;
+    color: #555;
+    text-align: center;
+    font-weight:bolder;
+  
+  }
+  
+  .thumbnail-container3{
+  
+  
+    width: 80%;
+   
+    
+    margin: 0 auto;
+  
+    
+  
+  
+  }
+  
+  .thumbnail-container3 img{
+    border: 5px solid #52AD9C; /* Change 'black' to your desired color */
+    border-radius: 15px; 
+  
+    margin: 0 auto;
+  
+    width: 100%
+  
+    
+  }
+  
+  .thumbnail-container3 p {
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+  
+    text-align: center;
+  
+    margin-top: 10px;
+  }
+  
+  
+  
+  
+  
+  .tech-tags{
+    display: flex;
+  
+    justify-content: center;
+    gap: 5px;
+  
+    width: 100%;
+  }
+  
+  
+  .tech-tags span {
+  
+    background-color: #555;
+    color: #ffffff;
+    padding: 4px 12px;
+    margin: 5px 5px 0 4;
+    font-size: 13px;
+    border-radius: 20px;
+    line-height: 1;
+  
+    display: inline-flex;
+  
+    justify-content: center;
+  
+    align-items: center;
+  
+    white-space: nowrap; 
+  
+  }
+  
+  
+  
+  
+  
+  
+  
+  .tech-tags2{
+    display: flex;
+    flex-wrap: row;
+    justify-content: center;
+    gap: 5px;
+  
+    width: 100%;
+  }
+  
+  
+  .tech-tags2 span {
+  
+    background-color: #555;
+    color: #ffffff;
+    padding: 4px 12px;
+    margin: 5px 5px 0 0;
+    font-size: 13px;
+    border-radius: 20px;
+  
+    display: inline-flex;
+  
+    justify-content: center;
+  
+    align-items: center;
+  
+    white-space: nowrap; 
+  }
+  
+  
+  
+  .button-cont{
+  
+  
+    /*make the buttons side by side */
+    display: flex;
+  
+  
+    justify-content: center;
+  
+    gap: 15px;
+  
+  
+  
+  }
+  
+  
+  .button{
+  
+    display: inline-block;
+  
+    margin-top: 15px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  
+  }
+  
+  
+  .button:hover{
+    background-color: grey;
+  }
+  
+  
+  
+  
+  .description3 {
+    display: none;
+  
+    
+  }
+  
+  .description30{
+  
+  
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+    margin-top: 10px;
+    color: #555;
+    text-align: center;
+    font-weight:bolder;
+    
+  
+  }
+  
+  
+  
+  #section2 h1{
+    font-size: 25px;
+    margin-top: 60px;
+    margin-left: 100px;
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+  
+    
+  }
+  
+  #section2 p{
+    max-width: 700px;
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-left: 100px;
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+  
+    
+  
+  }
+  
+  
+  
+  #section3{
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55vh;
+  
+  
+    
+  }
+  
+  #section3 h1{
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+    font-size: 30px;
+    margin-top: -390px;
+    
+  }
+  
+  
+  
+  
+  .projects-row1{
+  
+    display: block;
+  
+    margin-top: -370px;
+  
+    
+  
+  }
+  
+  .description100{
+  
+  
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+    margin-top: 10px;
+    color: #555;
+    text-align: center;
+    font-weight:bolder;
+    
+  
+  }
+  
+  .projects-row p{
+  
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+    text-align: center;
+  
+  }
+  
+  
+  
+  
+  .project-card1 {
+   
+    border-radius: 20px; /* softer curve */
+    border: 2px solid #000000; /* light gray border */
+    padding: 10px;
+    width: 270px;
+    height: 520px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+    margin: 0 auto; /* Center the card */
+  
+  
+    margin-bottom: 80px; 
+  
+  
+    
+  }
+  
+  .projectImage1{
+  
+  
+    width: 190%;
+    height: 230px; /* or 220px or 250px if you want even bigger */
+    object-fit: cover; /* keeps the image nicely inside its box without stretching */
+    border-radius: 12px; /* optional, makes corners round */
+  
+  
+  
+    
+  
+  }
+  
+  
+  .project-card1:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  
+  
+  
+  
+  .drone{
+  
+    width: 80%;
+   
+    
+    margin: 0 auto;
+    
+    
+  }
+  
+  .description200{
+  
+  
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+    margin-top: 10px;
+    color: #555;
+    text-align: center;
+    font-weight:bolder;
+    
+  
+  }
+  
+  .drone img{
+    border: 5px solid #52AD9C; /* Change 'black' to your desired color */
+    border-radius: 15px; 
+  
+    margin: 0 auto;
+  
+    width: 100%
+    
+    
+  }
+  
+  .d1{
+    display: none;
+    overflow-x: hidden;
+  }
+  
+  
+  /* Description text */
+  .description10 {
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+    margin-top: -110px;
+    color: #555;
+    text-align: center;
+    overflow-x: hidden;
+  }
+  
+  
+  .ePortfolio{
+  
+  
+    width: 80%;
+   
+    
+    margin: 0 auto;
+  
+  }
+  
+  .description300{
+  
+  
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+    margin-top: 10px;
+    color: #555;
+    text-align: center;
+    font-weight:bolder;
+    
+  
+  }
+  
+  .ePortfolio img{
+    border: 5px solid #52AD9C; /* Change 'black' to your desired color */
+    border-radius: 15px; 
+  
+    margin: 0 auto;
+  
+    width: 100%
+  }
+  
+  
+  .d2 {
+    display: none;
+  }
+  
+  
+  
+  .description20{
+  
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+    margin-top: -110px;
+  
+    color: #555;
+    text-align: center;
+  
+  }
+  
+  
+  .project{
+  
+  
+    width: 80%;
+   
+    
+    margin: 0 auto;
+  
+  
+  }
+  
+  .project img{
+    border: 5px solid #52AD9C; /* Change 'black' to your desired color */
+    border-radius: 15px; 
+  
+    margin: 0 auto;
+  
+    width: 100%
+    
+  }
+  
+  
+  .d3 {
+    display: none;
+  }
+  
+  .description30{
+  
+  
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+    margin-top: -110px;
+  
+    color: #555;
+    text-align: center;
+  
+  
+  }
+  
+  
+  #section5{
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55vh;
+  
+  
+  }
+  
+  #section5 h1{
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+    font-size: 21px;
+    margin-top: -250px;
+  }
+  
+  
+  .icons{
+  
+    display: flex;
+    justify-content: center;
+    margin-top: -250px;
+    
+  
+  
+  }
+  
+  
+  
+  .c{
+  
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 50%; /* Makes the icon circular */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+    font-size: 24px;
+  
+  }
+  
+  .c:hover{
+  
+    transform: scale(1.1); /* Slightly enlarge the icon */
+    background-color: grey;
+  
+  
+  }
+  
+  
+  
+  .icons2{
+  
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    
+    gap: 20px
+  
+  }
+  
+  .tools{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 40%; /* Makes the icon circular */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+    font-size: 20px;
+  
+  }
+  
+  .tools:hover{
+  
+    transform: scale(2.2); /* Slightly enlarge the icon */
+    background-color: grey;
+  
+  
+  }
+  
+  
+  
+  #section6{
+  
+    display: none;
+  
+    /*display: flex;*/
+    justify-content: center;
+    align-items: center;
+    height: 55vh;
+  
+  
+  }
+  
+  #section6 h1{
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+  
+    font-size: 30px;
+    margin-top: 50px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  .extraSection p{
+  
+    display: none;
+  
+    /*display: flex;*/
+    justify-content: center;
+    align-items: center;
+  
+    
+    height: 100vh; /* Sets the height to fill the viewport */
+    text-align: center; /* Ensures the text is centered within the box */
+  
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+    font-size: 14px;
+    margin-top: -550px;
+  
+    align-items: center;
+  
+    padding: 40px;
+  
+  
+  }
+  
+  
+  
+  .image {
+    display: none;;
+    /*display: flex; *//* Enables Flexbox for alignment */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    margin-top: -350px;
+  }
+  
+  .image img {
+    width: 290px;
+    height: auto;
+    border: 5px solid #bbeeff;
+    border-radius: 15px;
+    
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  } /*END OF PHONE-----------------------------------------*/
+  
+  
+  
+  
+  @media screen and (min-width: 921px){
+  
+  
+    body{
+      /*background-color: white;*/
+      background-color: #E0FFFF;
+      /*background-image: url(4907157.jpg);*/
+      background-size: 100% auto;
+      background-attachment: fixed;
+      overflow: auto;
+  
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden; /* Prevents horizontal scrolling */
+  
+      
+  
+    }
+  
+  
+    .mobile-menu-wrapper{
+  
+      display: none;
+  
+    }
+  
+  
+    #particles-js {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+    
+  
+    .contactMe{
+      display: none;
+    }
+  
+    /* PICUTRE */
+    .image1{
+      width: 300px;
+      height: 200px;
+    }
+  
+  .project-cardStart{
+  
+    margin: 0 auto;
+  
+    border-radius: 20px; /* softer curve */
+    border: 2px solid #000000; /* light gray border */
+    /*#e0e0e0; light gray border */
+    padding: 10px;
+    width: 600px;
+    height: 150px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+  }
+  
+  
+    .startText h4{
+  
+  
+  
+      margin: 0 auto;
+  
+  
+  
+      position: relative;
+  
+      max-width: 500px;      
+  
+      font-size: 19px;
+  
+      text-align: center;
+  
+      
+    
+      margin-top: 30px;
+    
+      font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+    
+    
+      font-weight: normal;
+    
+    
+    }
+  
+  
+    .footer-contactStart{
+  
+  
+  
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      gap: 25px;
+  
+      
+  
+      margin-top: 70px;
+    
+  
+  
+  
+    }
+    
+  
+  
+  
+  /* HEADER */
+  
+  #top-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #e0f0ff; /* Slightly softer blue */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar{
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /*margin-left: 50px;*/
+    /*margin-top: 10px;*/
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
+    /*font-family: 'Courier New', Courier, monospace;*/
+  
+    background-color: #52AD9C;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); 
+    padding: 10px 5%;
+  
+  }
+  
+  
+  
+    
+  /* ROW HEADER */
+  
+  
+  .logo img{
+  
+    height: 100px;
+    width: auto;
+    object-fit: contain;
+  
+  }
+  
+  nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+  
+  
+  }
+  
+  /* DECORATION, COLOUR OF TEXT */
+  
+  nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 21px;
+    position: relative;
+    
+  }
+  
+  
+  nav ul li a::after{
+    content: ' ';
+    width: 0;
+    height: 3px;
+    background: #000000;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.3s;
+  }
+  
+  nav ul li a:hover::after{
+    width: 100%;
+  }
+  
+  
+  
+  
+  #section1{
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    text-align: center;
+  
+  
+  }
+  
+  .me1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    max-width: 1200px;
+    width: 90%;
+    flex-wrap: wrap; /* So it stacks on smaller screens */
+    margin-top: 200px;
+  }
+  
+  .highlight{
+    font-size: 30px;
+  }
+  
+  
+  .phoneText{
+  
+    display: none;
+  }
+  
+  
+  
+  .me1 h1{
+  
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+  
+    font-size: 50px;
+  
+  }
+  
+  .me1 p{
+  
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+  
+    font-size: 18px;
+  
+   
+  
+  }
+  
+  .profile-pic5{
+  
+    display: none;
+  
+  
+  }
+  
+  .profile-pic {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%; 
+    
+    margin-left: 70px;
+    margin-bottom: -10px;
+    border: 5px solid #52AD9C;
+  
+  
+    transition: transform 0.4s ease, box - shawdow 0.4s ease;
+  
+  }
+  
+  .profile-pic:hover{
+  
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  
+  }
+  
+  .profile-pic2{
+    display: none;
+  }
+  
+  
+  
+  
+  
+  
+  #section0{
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+  
+  
+  }
+  
+  #section0 h1{
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+    font-size: 40px;
+    margin-top: -20px;
+  }
+  
+  
+  
+  
+  .aboutMe{
+  
+    display:flex;
+    justify-content: space-between;
+    /*this makes it so i can postion the image anywhere*/
+    align-items: flex-start;
+  
+  
+  
+    gap: 170px;
+  
+    padding: 150px;
+  
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+  
+    margin-top: -100px;
+  
+    margin-left: -50px;
+  
+    
+  
+  
+  }
+  
+  .text{
+  
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+    font-size: 18px;
+  
+    text-align: justify;
+  
+    margin-top: -140px;
+  
+      
+  
+  }
+  
+  
+  .text p{
+  
+    margin-bottom: 150px;
+  }
+  
+  
+  .text1{
+    display: none;
+  }
+  
+  
+  .me {
+    display: flex;
+    justify-content: center; /* centers horizontally */
+    align-items: center;     /* centers vertically */
+    height: 1vh;           /* take full viewport height */
+  }
+  
+  .me img {
+    width: 710px;
+    height: auto;
+    border-radius: 20px;
+    border: 5px solid #52AD9C;
+  }
+  
+  .me5 {
+    display: flex;
+    justify-content: center; /* centers horizontally */
+    align-items: center;     /* centers vertically */
+    height: 25vh;           /* take full viewport height */
+  }
+  
+  .me5 img {
+    width: 710px;
+    height: auto;
+    border-radius: 20px;
+    border: 5px solid #52AD9C;
+    margin-top: 200px;
+  }
+  
+  
+  
+  
+  
+  
+  #section12{
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 165vh;
+  
+  
+  }
+  
+  #section12 h1{
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+  
+    font-size: 40px;
+    margin-top: -600px;
+  }
+  
+  
+ .jobtext p{
+
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+    text-align: center;
+    margin-top: -1250px;
+    font-size: 18px;
+    padding: 150px;
+  
+  }
+
+
+  .newText1{
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+    text-align: center;
+ 
+    font-size: 18px;
+    padding: 150px;
+
+  }
+
+  .jobtext ul{
+
+
+    list-style-type: disc;  /* bullets */
+    list-style-position: inside; /* keep bullets close to text */
+    
+
+    margin-top: -120px;
+
+  }
+
+  .jobtext ul li{
+
+    margin-top: 20px;
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+    text-align: center;
+  
+    font-size: 18px;
+  
+
+
+
+  }
+  
+  
+  .jobtext2 p{
+
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+    text-align: center;
+    margin-top: -200px;
+    font-size: 18px;
+    padding: 150px;
+  
+  }
+  
+  .thumbnail-rows{
+  
+    display: flex; 
+    justify-content: space-around; 
+    align-items: flex-start; 
+    gap: 20px; 
+    cursor: pointer; 
+    margin-top: -50px;
+  
+  }
+  
+  .thumbnail-rows p{
+  
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+    text-align: center;
+  
+  }
+  
+  
+  
+  /*border around each project */
+  .project-card {
+   
+    border-radius: 20px; /* softer curve */
+    border: 2px solid #000000; /* light gray border */
+    /*#e0e0e0; light gray border */
+    padding: 10px;
+    width: 300px;
+    height: 570px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+  }
+  
+  
+  
+  .project-card:hover {
+  
+    background-color: #e6f5f3;
+    
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  
+  
+  
+  .thumbnail-container1{
+  
+    width: 80%;
+   
+    
+    margin: 0 auto;
+  
+  
+    
+  }
+  
+  .thumbnail-container1 img{
+    border: 5px solid #52AD9C; /* Change 'black' to your desired color */
+    border-radius: 15px; 
+  
+    margin: 0 auto;
+  
+    width: 100%
+  
+    
+  }
+  
+  .thumbnail-container1 p{
+    
+  }
+  
+  .description1{
+    display: none;
+  
+  }
+  
+  
+  /* Description text */
+  .description10 {
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+   
+    color: #555;
+    text-align: center;
+  
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans
+
+
+ }
+  
+  
+  
+  
+  
+  
+  
+  
+  .tech-tags{
+    display: flex;
+  
+    justify-content: center;
+    gap: 5px;
+  
+    width: 100%;
+  }
+  
+  
+  .tech-tags span {
+  
+    background-color: #555;
+    color: #ffffff;
+    padding: 4px 12px;
+    margin: 5px 5px 0 4;
+    font-size: 13px;
+    border-radius: 20px;
+    line-height: 1;
+  
+    display: inline-flex;
+  
+    justify-content: center;
+  
+    align-items: center;
+  
+    white-space: nowrap; 
+  
+  }
+  
+  
+  
+  
+  
+  
+  
+  .tech-tags2{
+    display: flex;
+    flex-wrap: row;
+    justify-content: center;
+    gap: 5px;
+  
+    width: 100%;
+  }
+  
+  
+  .tech-tags2 span {
+  
+    background-color: #555;
+    color: #ffffff;
+    padding: 4px 12px;
+    margin: 5px 5px 0 0;
+    font-size: 13px;
+    border-radius: 20px;
+  
+    display: inline-flex;
+  
+    justify-content: center;
+  
+    align-items: center;
+  
+    white-space: nowrap; 
+  }
+  
+  .button-cont{
+  
+  
+    /*make the buttons side by side */
+    display: flex;
+  
+  
+    justify-content: center;
+  
+    gap: 15px;
+  
+    margin-top: auto;
+  
+  
+  
+  }
+  
+  
+  .button{
+  
+    display: inline-block;
+  
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  
+  }
+  
+  
+  .button:hover{
+    background-color: grey;
+  }
+  
+  
+  /* Description text */
+  .description1 {
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+    margin-top: -60px;
+    color: #555;
+    text-align: center;
+    font-weight:bolder;
+  }
+  
+  .description10{
+    display: none;
+  }
+  
+  .description2 {
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+    margin-top: -60px;
+    color: #555;
+    text-align: center;
+    font-weight:bolder;
+  }
+  
+  .description20{
+  
+    display: none;
+  
+  }
+  
+  
+  .description3 {
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+    margin-top: -60px;
+    color: #555;
+    text-align: center;
+    font-weight:bolder;
+  }
+  
+  
+  .description30{
+  
+    display: none;
+  }
+  
+  
+  
+  
+  #section2 h1{
+    font-size: 25px;
+    margin-top: 60px;
+    margin-left: 100px;
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+  
+  }
+  
+  #section2 p{
+    max-width: 700px;
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-left: 100px;
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+  
+  
+  }
+  
+  
+  
+  
+  #section3{
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55vh;
+  
+  
+  }
+  
+  #section3 h1{
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+    font-size: 40px;
+    margin-top: 100px;
+  }
+  
+  
+  
+  
+  
+  .projects-row1{
+  
+    display: flex; 
+    justify-content: space-around; 
+    align-items: flex-start; 
+    gap: -10px; 
+    cursor: pointer; 
+    margin-top: -50px;
+  
+  }
+  
+  .projects-row1 p{
+  
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+    text-align: center;
+  
+  }
+  
+  
+  
+  /*border around each project */
+  .project-card1 {
+   
+    border-radius: 20px; /* softer curve */
+    border: 2px solid #000000; /* light gray border */
+    /*#e0e0e0; light gray border */
+    padding: 10px;
+    width: 300px;
+    height: 560px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+  }
+  
+  
+  
+  .project-card1:hover {
+  
+    background-color: #e6f5f3;
+    
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  
+  
+  
+  .projectImage1{
+  
+  
+      margin-left: -55px;
+      width: 190%;
+      height: 230px; /* or 220px or 250px if you want even bigger */
+      object-fit: cover; /* keeps the image nicely inside its box without stretching */
+      border-radius: 12px; /* optional, makes corners round */
+      margin-bottom: 20px;
+  
+  }
+  
+  
+  
+  
+  
+  .drone{
+  
+    padding: 90px;
+  
+    
+  }
+  
+  .drone img{
+    border: 5px solid #52AD9C; /* Change 'black' to your desired color */
+    border-radius: 15px; 
+    
+  }
+  
+  
+  
+  .drone p{
+  
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+    text-align: center;
+    justify-content: center;
+    width: 300px;
+    margin-left: -90px;
+  
+  
+  }
+  
+  
+  
+  
+  
+  
+  
+  .description100{
+    display: none;
+  }
+  
+  .d1{
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+    margin-top: -60px;
+    color: #555;
+    text-align: center;
+    font-weight:bolder;
+  }
+  
+  
+  .ePortfolio{
+  
+  
+    padding: 90px;
+  
+  }
+  
+  .ePortfolio img{
+    border: 5px solid #52AD9C; /* Change 'black' to your desired color */
+    border-radius: 15px; 
+  }
+  
+  
+  .ePortfolio p{
+  
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+    text-align: center;
+    justify-content: center;
+    width: 300px;
+    margin-left: -90px;
+  }
+  
+  
+  
+  .description200{
+    display: none;
+  }
+  
+  
+  .d2{
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+    margin-top: -60px;
+    color: #555;
+    text-align: center;
+    font-weight:bolder;
+  }
+  
+  
+  
+  .project{
+  
+  
+  
+    padding: 90px;
+  
+  }
+  
+  .project img{
+    border: 5px solid #52AD9C; /* Change 'black' to your desired color */
+    border-radius: 15px; 
+  }
+  
+  
+  .project p{
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+    text-align: center;
+    justify-content: center;
+    width: 300px;
+    margin-left: -90px;
+  }
+  
+  
+  
+  .description300{
+    display: none;
+  }
+  
+  
+  .d3{
+  
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+    margin-top: -60px;
+    color: #555;
+    text-align: center;
+    font-weight:bolder;
+  }
+  
+  
+  
+  
+  
+  #section5{
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55vh;
+  
+  
+  }
+  
+  #section5 h1{
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+    font-size: 40px;
+    margin-top: -100px;
+  }
+  
+  .icons{
+  
+    display: flex;
+    justify-content: center;
+    margin-top: -130px;
+    
+    gap: 50px
+  
+  }
+  
+  .c{
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 40%; /* Makes the icon circular */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+    font-size: 24px;
+  
+  }
+  
+  .c:hover{
+  
+    transform: scale(2.2); /* Slightly enlarge the icon */
+    transform: scale(2.2); /* Slightly enlarge the icon */
+    box-shadow: 0 0 100px 10px rgba(139, 220, 255, 0.5); 
+  
+  }
+  
+  
+  
+  .icons2{
+  
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    
+    gap: 50px
+  
+  }
+  
+  .tools{
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 40%; /* Makes the icon circular */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+    font-size: 24px;
+  
+  }
+  
+  .tools:hover{
+  
+    transform: scale(2.2); /* Slightly enlarge the icon */
+    box-shadow: 0 0 100px 10px rgba(139, 220, 255, 0.5); 
+  
+  
+  
+  }
+  
+  
+  
+  
+  #section6{
+  
+    display: none;
+  
+    /*display: flex;*/
+    justify-content: center;
+    align-items: center;
+    height: 55vh;
+  
+  
+  }
+  
+  #section6 h1{
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+  
+    font-size: 40px;
+    margin-top: 300px;
+  }
+  
+  
+  
+  
+  #section4{
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+  
+    margin-top: 650px;
+  
+  }
+  
+  
+  
+  
+  
+  
+  .extraSection{
+    display: none;
+    /*display: flex;*/
+    align-items: flex-start; 
+  
+    justify-content: space-between;
+  
+  
+    gap: 100px;
+  
+  
+    padding: 120px;
+  
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
+   
+    margin-left: 150px;
+    font-size: 19px;
+    margin-top: -100px;
+  
+  }
+  
+  
+  
+  .text p{
+  
+  
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
+   
+    margin-left: 100px;
+    font-size: 19px;
+    margin-top: -100px;
+  
+  }
+  
+  .image img{
+    width: 450px;
+    height: 450px;
+    margin-left: 100px;
+    margin-top: -20px;
+  
+    margin-right: 0px;
+  
+    border: 5px solid black; /* Change 'black' to your desired color */
+    border-radius: 15px; 
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  }
+  
+  
+  
+  
+  
+  /*FOOTER----------*/
+  
+  
+  
+  .footer {
+  
+    margin-top: 100px;
+    height: auto; 
+    padding: 20px 16px; 
+    /*background: #FFFAF0; */
+    /*background: #bbeeff; */
+    background: #52AD9C;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    border-top: 2px solid #e0e0e0; 
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .footer p{
+  
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+  
+    color: #ffffff;
+  
+  }
+  
+  
+  a{
+    text-decoration: none;
+  }
+  
+  
+  
+  
+  .footer-contact a:hover {
+    text-decoration: underline; /* Add underline on hover */
+  }
+  
+  /* Footer Logo */
+  .footer-logo {
+    width: 170px; /* Adjust based on your logo size */
+    margin-bottom: 10px; /* Space below logo */
+  }
+  
+  
+    
+  
+  
+  
+    
+  
+  
+  
