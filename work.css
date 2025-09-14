@@ -805,6 +805,7 @@
     font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
     font-size: 40px;
     margin: 0;          /* remove negative top margin, let flex center it */
+    margin-top: 10px;
   }
   
   
@@ -893,22 +894,23 @@
   
   
   
-  #section12{
-  
+  #section12 {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 165vh;
-  
-  
+    justify-content: center;   /* horizontal centering */
+    align-items: flex-start;   /* vertical start = top */
+    min-height: 165vh;         /* keeps section tall if needed */
+    height: auto;              /* lets content expand naturally */
+    padding: 10vh 5vw;         /* top padding moves content slightly down from top */
+    box-sizing: border-box;
+    text-align: center;
   }
   
-  #section12 h1{
-    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
-  
+  #section12 h1 {
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
     font-size: 40px;
-    margin-top: -780px;
+    margin: 0;                 /* remove negative margin */
   }
+  
   
   
  .jobtext p{
