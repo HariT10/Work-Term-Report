@@ -926,6 +926,7 @@
     justify-content: center; /* centers horizontally */
     align-items: center;     /* centers vertically */
     height: 25vh;           /* take full viewport height */
+    padding-bottom: 200px;
   }
   
   .me5 img {
